@@ -1,16 +1,5 @@
-// $('.buttonStartTest').bind('click', function () {
-//    console.log();
-// });
-
-
-$('.blur')[0].hidden = true;
-$('.modalWindow')[0].hidden = true;
-
-
-function toggleModalWindow() {
-    $('.blur')[0].hidden = !$('.blur')[0].hidden;
-    $('.modalWindow')[0].hidden = !$('.modalWindow')[0].hidden;
-}
+$('#modal').hide();
+$('.test').hide();
 
 function insertData(modalData) {
     $('.testName').html(modalData.testName);
@@ -18,25 +7,46 @@ function insertData(modalData) {
     $('.comment').html(modalData.comment);
 }
 
-function hideAll() {
- // TODO
-}
-
 function viewTest() {
-    hideAll();
-
-    $('.test').hidden = false;
+    $('.test').show();
 }
 
+function insertDataTest(data) {
+    $('.question').html(data.question);
+
+    $('.responseFirst').html(data.checkbox[0]);
+    $('.responseSecond').html(data.checkbox[1]);
+    $('.responseThird').html(data.checkbox[2]);
+}
+
+function checkTest() {
+
+}
+
+/*
+
+{
+    question: '',
+    checkbox: [
+        '1',
+        '2',
+        '3'
+    ]
+}
+
+ */
 
 $('.word').bind('click', function () {
+
+    $('#modal').show();
+
     insertData({
         testName : 'Word',
         desc : '123',
         comment : '123'
     });
 
-    toggleModalWindow();
+
 
     $('.buttonStartTest').one('click', function () {
         // TODO: viewTest()
@@ -44,33 +54,33 @@ $('.word').bind('click', function () {
 });
 
 $('.java').bind('click', function () {
+    $('#modal').show();
+
     insertData({
         testName : 'Java',
         desc : '123',
         comment : '123'
     });
 
-    toggleModalWindow();
-
     $('.buttonStartTest').one('click', function () {
-        // TODO: viewTest()
+        viewTest();
     });
 });
 
 $('.excel').bind('click', function () {
+    $('#modal').show();
+
     insertData({
         testName : 'Excel',
         desc : '123',
         comment : '123'
     });
 
-    toggleModalWindow();
-
     $('.buttonStartTest').one('click', function () {
         // TODO: viewTest()
     });
 });
 
-
-
-$('.blur').bind('click', toggleModalWindow);
+$('.exitModalButton').bind('click', function () {
+    $('#modal').hide();
+});

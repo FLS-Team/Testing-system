@@ -20,50 +20,87 @@
 <body>
 
 <div class="root">
-    <div class="blur fullSizeBlock"></div>
+<!--    <div class="blur fullSizeBlock"></div>-->
 
-    <div class="modalWindow fullSizeBlock">
-        <div class="content">
-            <div class="info">
-                <h1 class="testName">MS WORD</h1>
-                <h2 class="desc">Текстовый редактор</h2>
-                <p class="comment">
-                    Тест создан в целях проверки<br>
-                    и закрепления знаний по теме<br>
-                    "Текстовый редактор"
-                </p>
-            </div>
-            <div class="start">
-                <button class="buttonStartTest">Приступить</button>
-            </div>
-        </div>
-    </div>
+<!--    <div class="modalWindow fullSizeBlock">-->
+<!--        <div class="content">-->
+<!--            <div class="info">-->
+<!--                <h1 class="testName">MS WORD</h1>-->
+<!--                <h2 class="desc">Текстовый редактор</h2>-->
+<!--                <p class="comment">-->
+<!--                    Тест создан в целях проверки<br>-->
+<!--                    и закрепления знаний по теме<br>-->
+<!--                    "Текстовый редактор"-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="start">-->
+<!--                <button class="buttonStartTest">Приступить</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="main">
         <div class="title">
             <h1>Тестирование<br>по информатике</h1>
         </div>
 
-        <hr width="15%">
+        <hr class="hr-line">
 
         <div>
-            <div class="name">
-                <p>MS WORD</p>
-                <br>
-                <p>JAVA</p>
-                <br>
-                <p>EXCEL</p>
-            </div>
             <div class="button">
-                <button class="buttonModal word">Начать 1</button>
-                <button class="buttonModal java">Начать 2</button>
-                <button class="buttonModal excel">Начать 3</button>
+                <span class="blubtn buttonModal word">MS WORD</span>
+                <span class="blubtn buttonModal java">Java</span>
+                <span class="blubtn buttonModal excel">Excel</span>
             </div>
         </div>
     </div>
 
-    <div class="test">
-        Test
+    <div class="main modal" id="modal">
+        <div class="title1">
+            <p class="title1 testName">MS WORD</p>
+            <p class="sec desc">Текстовый редактор</p>
+        </div>
+
+        <hr class="hr-line">
+
+        <p class="th comment">
+            Тест создан в целях проверки<br>
+            и закрепления знаний по теме<br>
+            "Текстовый редактор"
+        </p>
+
+        <div class="button">
+            <span class="blubtn buttonStartTest">Приступить</span>
+            <span class="blubtn exitModalButton">Назад</span>
+        </div>
+    </div>
+
+    <div class="main test">
+
+
+
+        <div class="slider">
+            <p class="question">
+                Что изменяется в процессе<br>
+                редактирования текста?
+            </p>
+        </div>
+        <div class="quest">
+
+            <h3 class="responseFirst">question 1</h3>
+            <h3 class="responseSecond">question 2</h3>
+            <h3 class="responseThird">question 3</h3>
+
+<!--            <input type="radio" name="point" id="slide1">-->
+<!--            <label for="dva1">размер шрифта текста</label><br>-->
+<!--            <input type="radio" name="point" id="slide2">-->
+<!--            <label for="dva1">содержание текста</label><br>-->
+<!--            <input type="radio" name="point" id="slide3">-->
+<!--            <label for="dva1">параметры страницы</label>-->
+        </div>
+        <div class="button">
+            <span class="blubtn">Далее</span>
+        </div>
     </div>
 </div>
 

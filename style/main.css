@@ -24,6 +24,8 @@ body {
     position: fixed;
     width: 70%;
     height: 55vh;
+
+    z-index: 2;
 }
 
 
@@ -32,6 +34,71 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #202020;
+}
+
+
+body {
+    margin: 0;
+    background-color: #666666;
+}
+
+.main {
+    background-color: #333333;
+    width: 800px;
+    height: 440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+.name h1 {
+    text-align: center;
+    color: #cccccc;
+    font-size: 45px;
+}
+
+.hr-line {
+    width: 50%;
+}
+
+
+
+span.blubtn {
+    width: 120px;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    border: #cccccc 1px solid;
+    color: #cccccc;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+    margin-top: 35px;
+    transition: .5s;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+span.blubtn:hover {
+    top: 5px;
+    transition: .5s;
+    color: #cccccc;
+    border: #333333 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+span.blubtn:active {
+    color: #333333;
+    border: #333333 1px solid;
+    transition: .07s;
+    background-color: #333333;
 }
 
 .title {
@@ -43,63 +110,162 @@ body {
     color: #CCCCCC;
 }
 
-.name {
-    /*	background-color: red;*/
-    width: 50%;
-    float: left;
-}
-
-.button {
-    /*	background-color: white;*/
-    width: 50%;
-    float: right;
-}
-
-.name p {
-    display: inline-block;
-    color: #CCC;
-    font-size: 18px;
-    margin: 7% 0 0 65%;
-}
-
-.button button {
-    margin: 7% 0 0 25%;
-}
-
 /*=======================*/
 /*Вторая страница*/
 /*=======================*/
 
-.content {
-    background-color: #3f3f3f;
-    border-radius: 15px;
+/*.content {*/
+/*    background-color: #3f3f3f;*/
+/*    border-radius: 15px;*/
+/*    text-align: center;*/
+/*    width: 70%;*/
+/*    height: 55vh;*/
+/*    margin-left: 15%;*/
+/*}*/
+
+/*.info h1 {*/
+/*    display: inline-block;*/
+/*    color: #CCCCCC;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.info h2 {*/
+/*    color: #CCCCCC;*/
+/*    text-align: center;*/
+/*    padding-bottom: 20px;*/
+/*}*/
+
+/*.info p {*/
+/*    font-size: 25px;*/
+/*    color: #CCCCCC;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.start {*/
+/*    margin-top: 7%;*/
+/*}*/
+
+/* TODO:  refactoring */
+.main .title1 {
     text-align: center;
-    width: 70%;
-    height: 55vh;
-    margin-left: 15%;
+    color: #cccccc;
+    font-size: 45px;
+    margin: 30px 0 0 0;
 }
 
-.info h1 {
-    /*background-color: red;*/
-    display: inline-block;
-    color: #CCCCCC;
+.main .sec {
     text-align: center;
-}
-
-.info h2 {
-    /*background-color: blue;*/
-    color: #CCCCCC;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.info p {
+    color: #cccccc;
     font-size: 25px;
-    color: #CCCCCC;
-    text-align: center;
+    margin: 10px 0 25px 0;
 }
 
-.start {
-    margin-top: 7%;
+.main .th {
+    text-align: center;
+    color: #cccccc;
+    font-size: 30px;
+    margin: 35px 0 75px 0;
+}
+
+
+/* questions */
+.slider {
+    background-color: #cccccc;
+    width: 600px;
+    height: 200px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+    position: relative;
+
+}
+
+.slider p{
+    color: #202020;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.quest input {
+    margin: 25px 0 0 150px;
+    font-size: 25px;
+}
+
+.quest label {
+    color: #cccccc;
+    font-size: 20px;
+    margin: 0 0 0 10px;
+}
+
+.number p {
+    text-align: center;
+    color: #cccccc;
+    font-size: 100px;
+    margin: 25px 0 0 0;
+    background-color: #202020;
+    width: 300px;
+    margin: 0 0 0 250px;
+    border-radius: 25px;
+}
+
+.estimation p {
+    text-align: center;
+    color: #cccccc;
+    font-size: 35px;
+    margin: 20px 0 0 0;
+}
+
+.num {
+    width: 60px;
+}
+
+.exit {
+    width: 120px;
+    margin: 0 0 0 600px;
+}
+
+.answer {
+    width: 120px;
+    display: inline-block;
+    margin: 0 0 25px 50px;
+}
+
+.num p {
+    text-align: center;
+    color: #ccc;
+    font-size: 50px;
+    margin: 15px 0 0 0;
+    background-color: #202020;
+    width: 60px;
+    border-radius: 50px;
+    margin: 15px 0 0 370px;
+}
+
+
+
+
+.response {
+    font-size: 20px;
+}
+
+.response:hover {
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.response:active {
+    text-decoration: underline;
+    color: #CCCCCC;
 }
 
